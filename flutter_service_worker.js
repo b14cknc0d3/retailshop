@@ -87,28 +87,21 @@ const RESOURCES = {
 "assets/NOTICES": "46bec58c34002b53403b114209959559",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
 "auth.html": "641eb099d07632db2937e4e1546cf161",
-"canvaskit/canvaskit.js": "c2b4e5f3d7a3d82aed024e7249a78487",
-"canvaskit/canvaskit.wasm": "4b83d89d9fecbea8ca46f2f760c5a9ba",
-"canvaskit/profiling/canvaskit.js": "ae2949af4efc61d28a4a80fffa1db900",
-"canvaskit/profiling/canvaskit.wasm": "95e736ab31147d1b2c7b25f11d4c32cd",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
-"flutter.js": "0816e65a103ba8ba51b174eeeeb2cb67",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
-"index.html": "82dfa8da4d13dee6e7686d9532db16e4",
-"/": "82dfa8da4d13dee6e7686d9532db16e4",
-"main.dart.js": "3ca809cf98e3a50ab4c13e48ae65c9a3",
+"index.html": "15ef61987dd4535af8177dbd16897c69",
+"/": "15ef61987dd4535af8177dbd16897c69",
+"main.dart.js": "39ec813c6283f94bc87f01be02828726",
 "manifest.json": "dcbc489da6e94b298e978066164e0d20",
-"shared_worker.dart.js": "badb10c8627eacb0038d5f804a74aeef",
 "sql-wasm.js": "abe5911756c78d17a8b67a113f4a62b2",
 "sqlite3.wasm": "1fa83a13fd9dc0af1f4d2b56e390097f",
 "version.json": "29207736e40c0498824a4fc3b5908447",
 "worker.dart": "bc08f6dd8bf1268d2d4ce100390aa095",
 "worker.dart.js": "badb10c8627eacb0038d5f804a74aeef",
-"worker.dart.js.deps": "8b44e420c829e604f1e5faa124e01705",
-"worker.dart.js.map": "57b37eb95bc050c08b43bffad14cb41b"
+"worker.dart.min.js": "badb10c8627eacb0038d5f804a74aeef"
 };
 
 // The application shell files that are downloaded before a service worker can

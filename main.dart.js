@@ -39955,7 +39955,7 @@ case"paidForCreditPurchase":return a.dx
 case"receivedFromCreditSale":return a.dx
 case"transfer":return a.dx
 default:return s}},
-bMP(){var s,r,q,p,o=null,n=A.bGb("shared_worker.dart.js").port
+bMP(){var s,r,q,p,o=null,n=A.bGb("worker.dart.min.js").port
 n.toString
 n=A.bF0(n)
 s=new A.b7(new A.au($.ar,t.h),t.gR)

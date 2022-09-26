@@ -34,24 +34,93 @@
 
   <script>
     // The value below is injected by flutter build, do not touch.
-    var serviceWorkerVersion = '1460474587';
+    var serviceWorkerVersion = '108423766';
   </script>
   <script defer src="sql-wasm.js"></script>
   <!-- This script adds the flutter initialization JS code -->
   <script src="flutter.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/jsqr@1.4.0/dist/jsQR.min.js"></script>
+  <style type="text/css">
+    body {background-color: #fff9e3;} 
+    .loading {
+        padding:8px;
+     position: relative;
+
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 24;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    
+
+
+    .loader {
+
+        border: 6px solid #23a3ff;
+        border-radius: 50%;
+        border-left: 6px solid white;
+        width: 40px;
+        height: 40px;
+        -webkit-animation: spin 1s linear infinite;
+        animation: spin 1s linear infinite;
+    }
+
+    @-webkit-keyframes spin {
+        0% {
+            -webkit-transform: rotate(0deg);
+        }
+
+        100% {
+            -webkit-transform: rotate(360deg);
+        }
+    }
+
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+    
+#loading-text {
+padding: 8px;
+  font-family: sans-serif;
+  text-align: center;
+ }
+</style>
 </head>
 <body>
+  <div class="loading">
+    <div class="loader"></div>
+    <div id="loading-text"></div>
+  </div>
+ 
   <script>
     window.addEventListener('load', function(ev) {
+      var loading = document.querySelector('#loading-text');
+      loading.textContent = "Loading entrypoint...";
       // Download main.dart.js
       _flutter.loader.loadEntrypoint({
+        
         serviceWorker: {
           serviceWorkerVersion: serviceWorkerVersion,
         }
       }).then(function(engineInitializer) {
+        loading.textContent = "Initializing engine...";
         return engineInitializer.initializeEngine();
       }).then(function(appRunner) {
+        loading.textContent = "Running app...";
         return appRunner.runApp();
       });
     });
